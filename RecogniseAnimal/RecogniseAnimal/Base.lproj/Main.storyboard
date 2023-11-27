@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RecogniseAnimal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Di1-zs-eUU" userLabel="SelectImageButton">
+                                <rect key="frame" x="20" y="79" width="353" height="250"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="photo" catalog="system"/>
+                                <connections>
+                                    <action selector="onSelectImageButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IXJ-Lb-uvY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HIF-Xh-xnq">
+                                <rect key="frame" x="20" y="79" width="353" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="GIC-8l-G4c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgB-af-c8z">
+                                <rect key="frame" x="20" y="344" width="353" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcs-SM-w41">
+                                <rect key="frame" x="20" y="777" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HIF-Xh-xnq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="882-ef-NgJ"/>
+                            <constraint firstItem="jgB-af-c8z" firstAttribute="top" secondItem="HIF-Xh-xnq" secondAttribute="bottom" constant="15" id="ARa-JZ-dGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dcs-SM-w41" secondAttribute="bottom" constant="20" id="CTL-30-oaT"/>
+                            <constraint firstItem="jgB-af-c8z" firstAttribute="leading" secondItem="HIF-Xh-xnq" secondAttribute="leading" id="HQz-2R-udL"/>
+                            <constraint firstItem="dcs-SM-w41" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LpL-Zk-vje"/>
+                            <constraint firstItem="Di1-zs-eUU" firstAttribute="leading" secondItem="HIF-Xh-xnq" secondAttribute="leading" id="N8q-AT-a4K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcs-SM-w41" secondAttribute="trailing" constant="20" id="Uw8-Ak-oEv"/>
+                            <constraint firstItem="Di1-zs-eUU" firstAttribute="bottom" secondItem="HIF-Xh-xnq" secondAttribute="bottom" id="WdZ-Mm-yKv"/>
+                            <constraint firstItem="Di1-zs-eUU" firstAttribute="top" secondItem="HIF-Xh-xnq" secondAttribute="top" id="kKN-A2-YwN"/>
+                            <constraint firstItem="jgB-af-c8z" firstAttribute="trailing" secondItem="HIF-Xh-xnq" secondAttribute="trailing" id="oBH-zZ-PvT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HIF-Xh-xnq" secondAttribute="trailing" constant="20" id="oi4-Zy-GJ0"/>
+                            <constraint firstItem="HIF-Xh-xnq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qVx-hQ-6Hi"/>
+                            <constraint firstItem="Di1-zs-eUU" firstAttribute="trailing" secondItem="HIF-Xh-xnq" secondAttribute="trailing" id="tr3-x4-Vo8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputImage" destination="HIF-Xh-xnq" id="yo1-Fe-rrn"/>
+                        <outlet property="resultLabel" destination="jgB-af-c8z" id="egc-dW-Cjh"/>
+                        <outlet property="supportedAnimals" destination="dcs-SM-w41" id="Rua-Dh-aHr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
